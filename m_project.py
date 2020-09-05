@@ -1,0 +1,307 @@
+from Tkinter import *
+root=Tk()
+root.geometry('1000x620')
+root.resizable(width=False,height=False)
+Label(root,text='Welcome to Master Type',font='algerian 55').grid(row=0,column=0,columnspan=5,padx=25)
+Label(root,text='Enter Name:',font='times 20').grid(row=1,column=0,pady=30)
+e1=Entry(root,font='times 20',bd=5,bg='light grey',justify='right')
+e1.grid(row=1,column=3,pady=30)
+def login():
+    root.destroy()
+    root1=Tk()
+    root1.geometry('1000x620')
+    root1.resizable(width=False,height=False)
+    def tutorial():
+        root1.destroy()
+        root0=Tk()
+        root0.geometry('1000x620')
+        root0.resizable(width=False,height=False)
+        img1=PhotoImage(file='1.gif')
+        lb=Label(root0,image=img1)
+        lb.place(x=0,y=0)
+        #Button(root0,text='PREV',font='Arial 16 bold',width=20,bd=5,command=login).place(x=20,y=560)
+        def t1():
+            root0.destroy()
+            root01=Tk()
+            root01.geometry('1000x620')
+            root01.resizable(width=False,height=False)
+            img1=PhotoImage(file='2.gif')
+            lb=Label(root01,image=img1)
+            lb.place(x=0,y=0)
+            #Button(root01,text='PREV',font='Arial 16 bold',width=20,bd=5,command=login).place(x=20,y=560)
+            Button(root01,text='NEXT',font='Arial 16 bold',width=20,bd=5).place(x=700,y=560)
+            root01.mainloop()
+        Button(root0,text='NEXT',font='Arial 16 bold',width=20,bd=5,commmand=t1).place(x=700,y=560)
+        root0.mainloop()
+                
+
+    def test():
+        root1.destroy()
+        root2=Tk()
+        root2.geometry('1000x620')
+        root2.resizable(width=False,height=False)
+        t=Text(root2,font='times',width=100,height=10,bd=5)
+        t.grid(row=0,column=0,columnspan=11)
+
+        p=['Rohit','is','a','good','boy']
+        for i in p:
+            t.insert(INSERT,i)
+            t.insert(INSERT,' ')
+        s=''
+        def change():
+            a1.configure(bg='white')
+        def Q(_event=None):
+            print t.get()[:-1]
+            s=s+(t.get()[:-1])
+            a1.configure(bg='blue')
+            a1.after(1000,change)
+        def W(_event=None):
+            s=s+(t.get()[:-1])
+            a2.configure(bg='blue')
+            a2.after(1000,change)
+        def E(_event=None):
+            s=s+(t.get()[:-1])
+            a3.configure(bg='blue')
+            a3.after(1000,change)
+        def R(_event=None):
+            s=s+(t.get()[:-1])
+            a4.configure(bg='blue')
+            a4.after(1000,change)
+        def T(_event=None):
+            s=s+(t.get()[:-1])
+            a5.configure(bg='blue')
+            a5.after(1000,change)
+        def Y(_event=None):
+            s=s+(t.get()[:-1])
+            a6.configure(bg='blue')
+            a6.after(1000,change)
+        def U(_event=None):
+            s=s+(t.get()[:-1])
+            a7.configure(bg='blue')
+            a7.after(1000,change)
+        def I(_event=None):
+            s=s+(t.get()[:-1])
+            a8.configure(bg='blue')
+            a8.after(1000,change)
+        def O(_event=None):
+            s=s+(t.get()[:-1])
+            a9.configure(bg='blue')
+            a9.after(1000,change)
+        def P(_event=None):
+            s=s+(t.get()[:-1])
+            a10.configure(bg='blue')
+            a10.after(1000,change)
+            
+        def backspace(_event=None):
+            s=s+(t.get()[:-1])
+            a11.configure(bg='blue')
+            a11.after(1000,change)
+
+        def capslock(_event=None):
+            s=s+(t.get()[:-1])
+            a12.configure(bg='blue')
+            a12.after(1000,change)
+
+        def A(_event=None):
+            s=s+(t.get()[:-1])
+            a13.configure(bg='blue')
+            a13.after(1000,change)
+        def S(_event=None):
+            s=s+(t.get()[:-1])
+            a14.configure(bg='blue')
+            a14.after(1000,change)
+        def D(_event=None):
+            s=s+(t.get()[:-1])
+            a15.configure(bg='blue')
+            a15.after(1000,change)
+        def F(_event=None):
+            s=s+(t.get()[:-1])
+            a16.configure(bg='blue')
+            a16.after(1000,change)
+        def G(_event=None):
+            s=s+(t.get()[:-1])
+            a17.configure(bg='blue')
+            a17.after(1000,change)
+        def H(_event=None):
+            s=s+(t.get()[:-1])
+            a18.configure(bg='blue')
+            a18.after(1000,change)
+        def J(_event=None):
+            s=s+(t.get()[:-1])
+            a19.configure(bg='blue')
+            a19.after(1000,change)
+        def K(_event=None):
+            s=s+(t.get()[:-1])
+            a20.configure(bg='blue')
+            a20.after(1000,change)
+        def L(_event=None):
+            s=s+(t.get()[:-1])
+            a21.configure(bg='blue')
+            a21.after(1000,change)
+
+        def enter(_event=None):
+            s=s+(t.get()[:-1])
+            a22.configure(bg='blue')
+            a22.after(1000,change)
+
+        def shift(_event=None):
+            s=s+(t.get()[:-1])
+            a23.configure(bg='blue')
+            a23.after(1000,change)
+
+        def Z(_event=None):
+            s=s+(t.get()[:-1])
+            a24.configure(bg='blue')
+            a24.after(1000,change)
+        def X(_event=None):
+            s=s+(t.get()[:-1])
+            a25.configure(bg='blue')
+            a25.after(1000,change)
+        def C(_event=None):
+            s=s+(t.get()[:-1])
+            a26.configure(bg='blue')
+            a26.after(1000,change)
+        def V(_event=None):
+            s=s+(t.get()[:-1])
+            a27.configure(bg='blue')
+            a27.after(1000,change)
+        def B(_event=None):
+            s=s+(t.get()[:-1])
+            a28.configure(bg='blue')
+            a28.after(1000,change)
+        def N(_event=None):
+            s=s+(t.get()[:-1])
+            a29.configure(bg='blue')
+            a29.after(1000,change)
+        def M(_event=None):
+            s=s+(t.get()[:-1])
+            a30.configure(bg='blue')
+            a30.after(1000,change)
+
+        def comma(_event=None):
+            s=s+(t.get()[:-1])
+            a31.configure(bg='blue')
+            a31.after(1000,change)
+
+        def dot(_event=None):
+            s=s+(t.get()[:-1])
+            a32.configure(bg='blue')
+            a32.after(1000,change)
+
+        def space(_event=None):
+            s=s+(t.get()[:-1])
+            a33.configure(bg='blue')
+            a33.after(1000,change)
+            
+        a1=Button(root2,text='Q',command=Q,width=8,height=2)
+        a1.grid(row=1,column=0)
+        root2.bind('q',Q)
+        a2=Button(root2,text='W',command=W,width=8,height=2)
+        root2.bind('w',W)
+        a2.grid(row=1,column=1)
+        a3=Button(root2,text='E',command=E)
+        root2.bind('e',E)
+        a3.grid(row=1,column=2)
+        a4=Button(root2,text='R',command=R)
+        root2.bind('r',R)
+        a4.grid(row=1,column=3)
+        a5=Button(root2,text='T',command=T)
+        root2.bind('t',T)
+        a5.grid(row=1,column=4)
+        a6=Button(root2,text='Y',command=Y)
+        root2.bind('y',Y)
+        a6.grid(row=1,column=5)
+        a7=Button(root2,text='U',command=U)
+        root2.bind('u',U)
+        a7.grid(row=1,column=6)
+        a8=Button(root2,text='I',command=I)
+        root2.bind('i',I)
+        a8.grid(row=1,column=7)
+        a9=Button(root2,text='O',command=O)
+        root2.bind('o',O)
+        a9.grid(row=1,column=8)
+        a10=Button(root2,text='P',command=P)
+        root2.bind('p',P)
+        a10.grid(row=1,column=9)
+        a11=Button(root2,text='backspace',command=backspace)
+        root2.bind('backspace',backspace)
+        a11.grid(row=1,column=10)
+
+        a12=Button(root2,text='caps lock',command=capslock)
+        root2.bind('caps lock',capslock)
+        a12.grid(row=2,column=0)
+        a13=Button(root2,text='A',command=A)
+        root2.bind('a',A)
+        a13.grid(row=2,column=1)
+        a14=Button(root2,text='S',command=S)
+        root2.bind('s',S)
+        a14.grid(row=2,column=2)
+        a15=Button(root2,text='D',command=D)
+        root2.bind('d',D)
+        a15.grid(row=2,column=3)
+        a16=Button(root2,text='F',command=F)
+        root2.bind('f',F)
+        a16.grid(row=2,column=4)
+        a17=Button(root2,text='G',command=G)
+        root2.bind('g',G)
+        a17.grid(row=2,column=5)
+        a18=Button(root2,text='H',command=H)
+        root2.bind('h',H)
+        a18.grid(row=2,column=6)
+        a19=Button(root2,text='J',command=J)
+        root2.bind('j',J)
+        a19.grid(row=2,column=7)
+        a20=Button(root2,text='K',command=K)
+        root2.bind('k',K)
+        a20.grid(row=2,column=8)
+        a21=Button(root2,text='L',command=L)
+        root2.bind('l',L)
+        a21.grid(row=2,column=9)
+        a22=Button(root2,text='enter',command=enter)
+        root2.bind('enter',enter)
+        a22.grid(row=2,column=10)
+
+        a23=Button(root2,text='shift',command=shift)
+        root2.bind('shift',shift)
+        a23.grid(row=3,column=0)
+        a24=Button(root2,text='Z',command=Z)
+        root2.bind('z',Z)
+        a24.grid(row=3,column=1)
+        a25=Button(root2,text='X',command=X)
+        root2.bind('x',X)
+        a25.grid(row=3,column=2)
+        a26=Button(root2,text='C',command=C)
+        root2.bind('c',C)
+        a26.grid(row=3,column=3)
+        a27=Button(root2,text='V',command=V)
+        root2.bind('v',V)
+        a27.grid(row=3,column=4)
+        a28=Button(root2,text='B',command=B)
+        root2.bind('b',B)
+        a28.grid(row=3,column=5)
+        a29=Button(root2,text='N',command=N)
+        root2.bind('n',N)
+        a29.grid(row=3,column=6)
+        a30=Button(root2,text='M',command=M)
+        root2.bind('m',M)
+        a30.grid(row=3,column=7)
+        a31=Button(root2,text=',',command=comma)
+        root2.bind(',',comma)
+        a31.grid(row=3,column=8)
+        a32=Button(root2,text='.',command=dot)
+        root2.bind('.',dot)
+        a32.grid(row=3,column=9)
+        a33=Button(root2,text='shift',command=shift)
+        root2.bind('shift',shift)
+        a33.grid(row=3,column=10)
+
+        
+        root2.mainloop()
+    Button(root1,text='Tutorial',font='Arial 76 bold',width=16,bd=5,command=tutorial).grid(row=0,column=0,sticky=N+S+E+W)
+    Button(root1,text='Start Test',font='Arial 74 bold',command=test,width=16,bd=5).grid(row=1,column=0,sticky=N+S+E+W)
+    Button(root1,text='Games',font='Arial 76 bold',width=16,bd=5).grid(row=2,column=0,sticky=N+S+E+W)
+    root1.mainloop()
+Button(root,text='Login',font='times 25',command=login).grid(row=2,column=2,pady=70)
+Label(root,text='If you are new user:',font='times 30').grid(row=3,column=0,pady=10)
+Button(root,text='Create account',font='times 25').grid(row=4,column=2,pady=40)
+root.mainloop()
